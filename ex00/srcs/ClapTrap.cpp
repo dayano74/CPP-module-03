@@ -10,3 +10,9 @@ ClapTrap::ClapTrap(const std::string& name)
 ClapTrap::~ClapTrap() {
   std::cout << "[ClapTrap] " << name << " desstructed\n";
 }
+
+void ClapTrap::attack(const std::string& target) {
+  std::cout << "ClapTrap " << this->name << "attacks " << target
+            << ", causing " << this->attackDamage << "points of damage!\n";
+
+}
