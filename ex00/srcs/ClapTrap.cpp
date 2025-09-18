@@ -8,10 +8,14 @@ ClapTrap::ClapTrap(const std::string& name)
 }
 
 ClapTrap::~ClapTrap() {
-  std::cout << "[ClapTrap] " << name << " desstructed\n";
+  std::cout << "[ClapTrap] " << name << " destructed\n";
 }
 
 void ClapTrap::attack(const std::string& target) {
+  if (hitPoints <= 0) {
+    std::cout << "ClapTrap " << name << " cannot attack: no hit points left.\n";
+    return ;
+  }
   std::cout << "ClapTrap " << this->name << "attacks " << target
             << ", causing " << this->attackDamage << "points of damage!\n";
 
