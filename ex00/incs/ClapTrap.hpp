@@ -11,6 +11,8 @@ class ClapTrap {
   int energyPoints;
   int attackDamage;
 
+  void log(const std::string& msg) const;
+
  public:
   ClapTrap(const std::string& name);
   ~ClapTrap();
