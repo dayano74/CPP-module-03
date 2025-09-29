@@ -2,6 +2,30 @@
 
 #include <iostream>
 
+ClapTrap::ClapTrap()
+    : name("default"), hitPoints(10), energyPoints(10), attackDamage(0) {
+  log("default-constructed");
+}
+
+ClapTrap::ClapTrap(const ClapTrap& other)
+    : name(other.name),
+      hitPoints(other.hitPoints),
+      energyPoints(other.energyPoints),
+      attackDamage(other.attackDamage) {
+  log("copy-constructed");
+}
+
+ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
+  if (this != &other) {
+    name = other.name;
+    hitPoints = other.hitPoints;
+    energyPoints = other.energyPoints;
+    attackDamage = other.attackDamage;
+  }
+  log("copy-assigned");
+  return *this;
+}
+
 ClapTrap::ClapTrap(const std::string& name)
     : name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
   log("constructed");

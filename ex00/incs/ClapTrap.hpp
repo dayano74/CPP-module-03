@@ -14,6 +14,9 @@ class ClapTrap {
   void log(const std::string& msg) const;
 
  public:
+  ClapTrap();
+  ClapTrap(const ClapTrap& other);
+  ClapTrap& operator=(const ClapTrap& other);
   ClapTrap(const std::string& name);
   ~ClapTrap();
 
