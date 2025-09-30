@@ -8,7 +8,7 @@ INCDIR := incs
 OBJDIR := objs
 DEPDIR := deps
 
-	SRCS := main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS := main.cpp ClapTrap.cpp ScavTrap.cpp
 
 SRCS := $(addprefix $(SRCDIR)/,$(SRCS))
 OBJS := $(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
