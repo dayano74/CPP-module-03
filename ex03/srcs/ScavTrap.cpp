@@ -1,4 +1,4 @@
-#include "ScavTrap.hpp"
+#include "../incs/ScavTrap.hpp"
 
 #include <iostream>
 

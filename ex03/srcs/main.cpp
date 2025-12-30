@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "DiamondTrap.hpp"
+#include "../incs/DiamondTrap.hpp"
 
 int main() {
   std::cout << "=== Default constructor ===\n";

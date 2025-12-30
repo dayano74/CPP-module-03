@@ -1,4 +1,4 @@
-#include "DiamondTrap.hpp"
+#include "../incs/DiamondTrap.hpp"
 
 #include <iostream>
 

@@ -1,4 +1,4 @@
-#include "ClapTrap.hpp"
+#include "../incs/ClapTrap.hpp"
 
 #include <iostream>
 

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "FragTrap.hpp"
+#include "../incs/FragTrap.hpp"
 
 int main() {
   std::cout << "=== Default constructor test ===" << std::endl;
