@@ -5,7 +5,10 @@ int main() {
 
   a.attack("Target1");
 
-  for (int i = 0; i < 10; ++i) a.attack("Dummy");
+  for (int i = 0; i < 9; ++i) {
+    std::cout << "[" << i + 1 << "]";
+    a.attack("Dummy");
+  }
   a.attack("After-EP-Zero");
 
   a.takeDamage(3);
